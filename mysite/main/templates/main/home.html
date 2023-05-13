@@ -1,0 +1,17 @@
+{% extends 'main/header.html' %}
+
+  {% block content %}
+
+  <!--CTA-->
+
+  {% if user.is_authenticated %}
+      
+      <h1>Hello {{ user.username }}!</h1>
+
+  {% else %}
+      
+      <h1>You're not logged in right now so you can't do anything, sorry :(</h1>
+
+  {% endif %}
+
+  {% endblock %}
